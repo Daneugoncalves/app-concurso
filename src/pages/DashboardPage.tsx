@@ -142,6 +142,7 @@ export function DashboardPage() {
         <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
           <Button
             variant="ghost"
+            disabled
             size="sm"
             leftIcon={<BookOpen className="h-3.5 w-3.5" />}
             onClick={() =>
@@ -171,6 +172,7 @@ export function DashboardPage() {
           <Button
             variant="ghost"
             size="sm"
+            disabled
             leftIcon={<BookOpen className="h-3.5 w-3.5" />}
             onClick={() =>
               handleStart({
@@ -184,6 +186,7 @@ export function DashboardPage() {
           </Button>
           <Button
             variant="ghost"
+            disabled
             size="sm"
             leftIcon={<BookOpen className="h-3.5 w-3.5" />}
             onClick={() =>
