@@ -186,7 +186,6 @@ export function DashboardPage() {
           </Button>
           <Button
             variant="ghost"
-            disabled
             size="sm"
             leftIcon={<BookOpen className="h-3.5 w-3.5" />}
             onClick={() =>

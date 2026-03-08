@@ -829,4 +829,327 @@ export const QUESTIONS: Question[] = [
       "A competência do Prefeito para fixar preços por decreto refere-se a preços de serviços públicos e concedidos, não a subsídios de agentes políticos. A fixação de subsídios de vereadores é matéria de reserva legal de iniciativa da própria Câmara (CF/88, art. 29, VI e VII), não podendo ser feita por decreto do Executivo.",
     xp: 50,
   },
+
+  // === RACIOCÍNIO LÓGICO ===
+
+  // --- EASY ---
+  {
+    id: "log-1",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "EASY",
+    question:
+      "Todo técnico de enfermagem vacinado contra hepatite B está protegido. Carlos é técnico de enfermagem e está vacinado. O que se pode concluir?",
+    options: [
+      "Carlos pode ou não estar protegido contra hepatite B",
+      "Carlos está protegido contra hepatite B",
+      "Carlos está protegido contra todas as doenças infecciosas",
+      "Apenas Carlos está protegido entre os técnicos",
+    ],
+    correctAnswerIndex: 1,
+    explanation:
+      "Pela regra do silogismo (modus ponens): 'Todo vacinado está protegido' + 'Carlos é vacinado' → 'Carlos está protegido'. A conclusão é necessariamente verdadeira.",
+    xp: 10,
+  },
+  {
+    id: "log-2",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "EASY",
+    question:
+      "A negação da proposição 'Todos os pacientes internados receberam medicação' é:",
+    options: [
+      "Nenhum paciente internado recebeu medicação",
+      "Todos os pacientes internados não receberam medicação",
+      "Alguns pacientes internados não receberam medicação",
+      "Nenhum paciente deixou de receber medicação",
+    ],
+    correctAnswerIndex: 2,
+    explanation:
+      "A negação de 'Todo A é B' é 'Algum A não é B'. Portanto, a negação de 'Todos os pacientes receberam medicação' é 'Algum (ao menos um) paciente não recebeu medicação'.",
+    xp: 10,
+  },
+  {
+    id: "log-3",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "EASY",
+    question:
+      "Em uma UPA, o número de atendimentos nos últimos 4 dias seguiu o padrão: 12, 17, 22, 27. Mantendo a sequência, quantos atendimentos ocorrerão no 5º dia?",
+    options: ["30", "31", "32", "33"],
+    correctAnswerIndex: 2,
+    explanation:
+      "A sequência tem razão constante de +5 (PA com r = 5): 12, 17, 22, 27, 32. O 5º termo é 27 + 5 = 32.",
+    xp: 10,
+  },
+  {
+    id: "log-4",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "EASY",
+    question:
+      "A enfermeira disse: 'O paciente receberá alta OU será transferido para a UTI.' Se o paciente não recebeu alta, o que podemos concluir?",
+    options: [
+      "O paciente ficará internado normalmente",
+      "Não é possível concluir nada",
+      "O paciente pode ou não ser transferido para a UTI",
+      "O paciente será transferido para a UTI",
+    ],
+    correctAnswerIndex: 3,
+    explanation:
+      "Em uma disjunção (P ∨ Q), se P é falso, então Q deve ser verdadeiro para que a proposição seja verdadeira. Como 'não recebeu alta' (¬P), conclui-se que 'será transferido para a UTI' (Q).",
+    xp: 10,
+  },
+  {
+    id: "log-5",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "EASY",
+    question:
+      "Em uma enfermaria com 20 leitos, 3/4 dos leitos estão ocupados. Quantos leitos estão disponíveis?",
+    options: ["3", "4", "5", "15"],
+    correctAnswerIndex: 2,
+    explanation:
+      "Leitos ocupados: 20 × 3/4 = 15. Leitos disponíveis: 20 − 15 = 5.",
+    xp: 10,
+  },
+  {
+    id: "log-6",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "EASY",
+    question:
+      "Nenhum medicamento vencido deve ser administrado. Alguns medicamentos do estoque estão vencidos. Qual conclusão é válida?",
+    options: [
+      "Todos os medicamentos do estoque estão vencidos",
+      "Nenhum medicamento do estoque deve ser administrado",
+      "Alguns medicamentos do estoque não devem ser administrados",
+      "Nenhum medicamento deve ser administrado em hipótese alguma",
+    ],
+    correctAnswerIndex: 2,
+    explanation:
+      "De 'Nenhum vencido pode ser administrado' + 'Alguns do estoque estão vencidos', conclui-se que 'Alguns do estoque não devem ser administrados' (os vencidos). Não podemos concluir nada sobre os não vencidos.",
+    xp: 10,
+  },
+  {
+    id: "log-7",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "EASY",
+    question:
+      "A proposição 'Se o paciente tem febre, então será medicado' é logicamente equivalente a:",
+    options: [
+      "Se o paciente não tem febre, não será medicado",
+      "Se o paciente será medicado, então tem febre",
+      "Se o paciente não será medicado, então não tem febre",
+      "O paciente tem febre e será medicado",
+    ],
+    correctAnswerIndex: 2,
+    explanation:
+      "A contrapositiva de 'P → Q' é '¬Q → ¬P', e ambas são logicamente equivalentes. Logo, 'febre → medicado' equivale a 'não medicado → não tem febre'.",
+    xp: 10,
+  },
+  {
+    id: "log-8",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "EASY",
+    question:
+      "Todo técnico de enfermagem do CTI usa EPI completo. Nenhum estagiário usa EPI completo. O que se pode concluir com certeza?",
+    options: [
+      "Alguns estagiários trabalham no CTI",
+      "Nenhum estagiário trabalha no CTI",
+      "Todos os estagiários trabalham no CTI",
+      "Alguns técnicos de enfermagem não usam EPI",
+    ],
+    correctAnswerIndex: 1,
+    explanation:
+      "Se todo técnico do CTI usa EPI completo, e nenhum estagiário usa EPI completo, então nenhum estagiário pode ser técnico do CTI — logo, nenhum estagiário trabalha no CTI.",
+    xp: 10,
+  },
+
+  // --- MEDIUM ---
+  {
+    id: "log-9",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "MEDIUM",
+    question:
+      "A proposição condicional P → Q (onde P = 'o paciente está consciente' e Q = 'responde aos estímulos') é FALSA apenas quando:",
+    options: [
+      "P é verdadeira e Q é verdadeira",
+      "P é falsa e Q é verdadeira",
+      "P é verdadeira e Q é falsa",
+      "P é falsa e Q é falsa",
+    ],
+    correctAnswerIndex: 2,
+    explanation:
+      "A condicional P → Q só é falsa quando a hipótese (P) é verdadeira e a conclusão (Q) é falsa. Nas demais combinações — incluindo P falso com qualquer Q — a proposição é verdadeira.",
+    xp: 25,
+  },
+  {
+    id: "log-10",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "MEDIUM",
+    question:
+      "Protocolo: 'Se o técnico não fizer o curativo no prazo, o paciente terá complicações.' O paciente não teve complicações. O que se pode concluir?",
+    options: [
+      "O técnico fez o curativo no prazo",
+      "O técnico não fez o curativo no prazo",
+      "O paciente não precisava de curativo",
+      "Não é possível concluir nada",
+    ],
+    correctAnswerIndex: 0,
+    explanation:
+      "Pela contrapositiva (modus tollens): '¬curativo → complicações'. Como '¬complicações' (paciente não teve complicações), conclui-se '¬(¬curativo)', ou seja, 'o técnico fez o curativo no prazo'.",
+    xp: 25,
+  },
+  {
+    id: "log-11",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "MEDIUM",
+    question:
+      "A negação da proposição composta 'O paciente está estável E recebeu alta' é:",
+    options: [
+      "O paciente não está estável E não recebeu alta",
+      "O paciente não está estável OU não recebeu alta",
+      "O paciente está instável E não recebeu alta",
+      "O paciente não está estável E recebeu alta",
+    ],
+    correctAnswerIndex: 1,
+    explanation:
+      "Pela Lei de De Morgan: ¬(P ∧ Q) = ¬P ∨ ¬Q. A negação de uma conjunção é a disjunção das negações. Portanto, '¬(estável ∧ alta)' = '¬estável ∨ ¬alta'.",
+    xp: 25,
+  },
+  {
+    id: "log-12",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "MEDIUM",
+    question:
+      "Uma técnica de enfermagem registra a temperatura do paciente a cada 4 horas, começando às 6h. Qual horário corresponde à 5ª medição?",
+    options: ["20h", "22h", "00h", "02h"],
+    correctAnswerIndex: 1,
+    explanation:
+      "As medições ocorrem às: 6h (1ª), 10h (2ª), 14h (3ª), 18h (4ª), 22h (5ª). A PA tem primeiro termo 6 e razão 4: aₙ = 6 + (n−1)×4. Para n=5: 6 + 16 = 22h.",
+    xp: 25,
+  },
+  {
+    id: "log-13",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "MEDIUM",
+    question:
+      "A proposição 'O paciente recebe dieta oral se e somente se está consciente e sem disfagia' é verdadeira. Um paciente está consciente, mas tem disfagia. Ele receberá dieta oral?",
+    options: [
+      "Sim, pois está consciente",
+      "Não, pois a condição composta não é integralmente satisfeita",
+      "Pode ou não receber, dependendo do médico",
+      "Sim, pois a disfagia não impede a dieta oral",
+    ],
+    correctAnswerIndex: 1,
+    explanation:
+      "O bicondicional P ↔ Q é verdadeiro quando P e Q têm o mesmo valor-verdade. A condição Q = 'consciente E sem disfagia' é falsa (tem disfagia), portanto o paciente NÃO recebe dieta oral.",
+    xp: 25,
+  },
+  {
+    id: "log-14",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "MEDIUM",
+    question:
+      "A negação da proposição 'Algum técnico de enfermagem do turno da manhã está de folga' é:",
+    options: [
+      "Todos os técnicos de enfermagem estão de folga",
+      "Algum técnico de enfermagem não está de folga",
+      "A maioria dos técnicos está trabalhando",
+      "Nenhum técnico de enfermagem do turno da manhã está de folga",
+    ],
+    correctAnswerIndex: 3,
+    explanation:
+      "A negação de 'Algum A é B' (∃x: Bx) é 'Nenhum A é B' (∀x: ¬Bx). Portanto, a negação de 'algum técnico está de folga' é 'nenhum técnico está de folga'.",
+    xp: 25,
+  },
+  {
+    id: "log-15",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "MEDIUM",
+    question:
+      "Num ambulatório, para cada 3 técnicos de enfermagem há 1 enfermeiro. Se há 18 técnicos, e a escala precisar de 1 coordenador para cada 2 enfermeiros, quantos coordenadores são necessários?",
+    options: ["2", "3", "4", "6"],
+    correctAnswerIndex: 1,
+    explanation:
+      "Técnicos: 18. Enfermeiros: 18 ÷ 3 = 6. Coordenadores: 6 ÷ 2 = 3.",
+    xp: 25,
+  },
+  {
+    id: "log-16",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "MEDIUM",
+    question:
+      "Considere: 'Se o paciente apresenta dispneia intensa (P) ou saturação abaixo de 90% (Q), então recebe oxigenoterapia (R)'. O paciente recebe oxigenoterapia. Qual conclusão é válida?",
+    options: [
+      "O paciente necessariamente apresenta dispneia intensa",
+      "O paciente necessariamente tem saturação abaixo de 90%",
+      "O paciente apresenta dispneia intensa ou saturação abaixo de 90%, ou ambos",
+      "Não é possível concluir nada sobre P e Q",
+    ],
+    correctAnswerIndex: 2,
+    explanation:
+      "A recíproca de P→R não é válida em lógica (afirmar o consequente é falácia). Porém, como a condicional é (P∨Q)→R, e R ocorreu, pelo raciocínio contrapositivo sabemos que ¬R→¬(P∨Q). Como R é verdadeiro, não podemos deduzir P ou Q isoladamente, mas podemos afirmar que ao menos uma das condições (P ou Q) deve ter sido satisfeita para desencadear R.",
+    xp: 25,
+  },
+
+  // --- HARD ---
+  {
+    id: "log-17",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "HARD",
+    question:
+      "Num hospital: (1) Todo paciente com sinais de sepse é encaminhado à UTI. (2) Todo paciente na UTI recebe monitorização contínua. (3) Se o paciente recebe monitorização contínua, a família é notificada. Carlos apresenta sinais de sepse. O que se pode concluir?",
+    options: [
+      "Carlos pode ou não receber monitorização contínua",
+      "Carlos será encaminhado à UTI, mas a família não será notificada",
+      "Carlos receberá monitorização contínua e a família será notificada",
+      "Apenas pacientes da UTI com sepse têm a família notificada",
+    ],
+    correctAnswerIndex: 2,
+    explanation:
+      "Cadeia silogística: Carlos tem sepse → (1) Carlos vai à UTI → (2) Carlos recebe monitorização contínua → (3) A família é notificada. Todas as premissas são universais afirmativas, e Carlos satisfaz a condição inicial.",
+    xp: 50,
+  },
+  {
+    id: "log-18",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "HARD",
+    question:
+      "A negação da proposição 'Se o técnico identificar erro de medicação (P), então deve comunicar à enfermeira (Q)' equivale logicamente a:",
+    options: [
+      "Se o técnico não identificar erro, não comunicará",
+      "Se o técnico comunicou, então identificou erro",
+      "O técnico identificou erro de medicação e NÃO comunicou à enfermeira",
+      "O técnico não identificou erro e não comunicou",
+    ],
+    correctAnswerIndex: 2,
+    explanation:
+      "A negação de P → Q é P ∧ ¬Q. Portanto, '¬(identificou → comunicou)' = 'identificou ∧ ¬comunicou': o técnico identificou o erro E não comunicou. As opções A e B são a recíproca e a conversa da condicional, não a negação.",
+    xp: 50,
+  },
+  {
+    id: "log-19",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "HARD",
+    question:
+      "Cinco técnicos (A, B, C, D, E) precisam ser escalados. Regras: (I) A e B não podem trabalhar no mesmo plantão. (II) C sempre trabalha com D. (III) Se E trabalha, A também trabalha. Qual escala é IMPOSSÍVEL?",
+    options: ["A, C, D, E", "B, C, D, E", "A, C, D", "B, C, D"],
+    correctAnswerIndex: 1,
+    explanation:
+      "Analisando B, C, D, E: pela regra III, E → A (se E trabalha, A deve trabalhar). Mas se A trabalha, pela regra I, B não pode trabalhar. Contradição: B está na escala mas E exige A, e A exclui B. Portanto, B, C, D, E é impossível.",
+    xp: 50,
+  },
+  {
+    id: "log-20",
+    category: "RACIOCINIO_LOGICO",
+    difficulty: "HARD",
+    question:
+      "Protocolo: 'Se o paciente não assinar o termo de consentimento, o procedimento eletivo não será realizado.' Sabe-se que o procedimento eletivo foi realizado. O que se conclui com certeza?",
+    options: [
+      "O paciente assinou o termo de consentimento",
+      "O paciente não assinou o termo de consentimento",
+      "O médico dispensou a exigência do consentimento",
+      "O procedimento pode ter sido realizado sem consentimento",
+    ],
+    correctAnswerIndex: 0,
+    explanation:
+      "Seja P = 'não assinou' e Q = 'não realizou'. A regra é P → Q. A contrapositiva é ¬Q → ¬P. Como ¬Q (procedimento foi realizado), conclui-se ¬P (o paciente assinou). Este é o modus tollens aplicado à contrapositiva.",
+    xp: 50,
+  },
 ];
